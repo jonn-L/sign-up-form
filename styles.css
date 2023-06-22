@@ -47,6 +47,11 @@ table {
 	src: url("fonts/Norse-Bold.otf") format("opentype");
 }
 
+@font-face {
+	font-family: Roboto-Regular;
+	src: url("fonts/Roboto-Regular.ttf") format("opentype");
+}
+
 body {
 	display: flex;
 }
@@ -82,7 +87,7 @@ body {
 }
 
 h1 {
-	font-size: 5em;
+	font-size: 5rem;
 	color: white;
 	font-family: Norse-Bold;
 }
@@ -98,7 +103,89 @@ h1 {
 	font-size: small;
 }
 
-span {
+.credits span {
 	text-decoration: underline;
 }
 
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 15px;
+	background-color: rgba(247, 244, 244, 0.979);
+	width: 75vw;
+	font-family: Roboto-Regular;
+}
+
+p {
+	font-size: 1.3rem;
+	padding-left: 30px;
+	font-weight: 580;
+	padding-right: 310px;
+	line-height: normal;
+}
+
+#create-account {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	background-color: white;
+	padding: 30px;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+legend {
+	font-size: 1.1rem;
+	font-weight: 500;
+}
+
+label {
+	font-size: 0.8rem;
+	color: rgba(0, 0, 0, 0.822);
+}
+
+input {
+	width: 17vw;
+	padding: 5px;
+	border-radius: 5px;
+	outline: none;
+	border: 1px solid gray;
+}
+
+input:focus {
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	border: 2px solid lightblue;
+	outline: none;
+}
+
+.fields {
+	display: flex;
+	justify-content: flex-start;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.field {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+	width: 40%;
+}
+
+button {
+	margin-left: 30px;
+	width: 15vw;
+	padding: 10px;
+	background-color: #596D48;
+	color: white;
+	border: none;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+.log-in {
+	padding-left: 30px;
+}
