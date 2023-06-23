@@ -1,7 +1,7 @@
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
+del, dfn, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
@@ -121,7 +121,6 @@ p {
 	font-size: 1.3rem;
 	padding-left: 30px;
 	font-weight: 580;
-	padding-right: 310px;
 	line-height: normal;
 }
 
@@ -152,13 +151,17 @@ input {
 	padding: 5px;
 	border-radius: 5px;
 	outline: none;
-	border: 1px solid gray;
+	border: 2px solid gray;
 }
 
 input:focus {
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 	border: 2px solid lightblue;
 	outline: none;
+}
+
+#password.error, #confirm-password.error {
+	border: 2px solid red;
 }
 
 .fields {
@@ -188,4 +191,8 @@ button {
 
 .log-in {
 	padding-left: 30px;
+}
+
+.log-in span {
+	color: #596D48;
 }
